@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "silly.homak.itemshadows.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	},
+	"client": [
+		"InGameHudMixin",
+		"ItemShadowMixin",
+		"RenderLayerMixin"
+	]
+}

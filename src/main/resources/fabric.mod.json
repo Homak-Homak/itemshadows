@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "itemshadows",
+	"version": "${version}",
+	"name": "Item Shadows",
+	"description": "Adds drop shadows to items in the inventory and hotbar",
+	"authors": [
+		"Homak"
+	],
+	"license": "MIT",
+	"icon": "assets/itemshadows/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"silly.homak.itemshadows.ItemShadows"
+		],
+		"modmenu": [
+			"silly.homak.itemshadows.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"itemshadows.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": ">=3.6.1+1.21-fabric"
+	}
+}
